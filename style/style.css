@@ -1,0 +1,43 @@
+#player{
+    width: 4rem;
+    height: 4rem;
+    background-color: lightblue;
+    position: absolute;
+    bottom: 50%;
+    transform: translateX(96px);
+}
+#obstacle{
+    position: absolute;
+    z-index: 0;
+    left: 90%;
+    height: 100dvh;
+    display: flex;
+    gap: 2rem;
+    width: 600dvw;
+    justify-content: space-around;
+    /* animation: ; */
+}
+.wallTerrain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100dvh;
+}
+.walls{
+    width: 4dvw;
+    height: 40dvh;
+    background-color: black;
+    position: relative;
+    left: 20px;
+}
+.fixWalls{
+    width: 10dvw;
+    height: 40dvh;
+    background-color: black;
+}
+
+@keyframes play {
+    to{
+        left: -600%;
+    }
+}
